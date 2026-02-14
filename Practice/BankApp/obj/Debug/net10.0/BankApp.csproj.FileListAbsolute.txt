@@ -1,4 +1,0 @@
-D:\Capgemini-Training\BankApp\obj\Debug\net10.0\BankApp.GeneratedMSBuildEditorConfig.editorconfig
-D:\Capgemini-Training\BankApp\obj\Debug\net10.0\BankApp.AssemblyInfoInputs.cache
-D:\Capgemini-Training\BankApp\obj\Debug\net10.0\BankApp.AssemblyInfo.cs
-D:\Capgemini-Training\BankApp\obj\Debug\net10.0\BankApp.csproj.CoreCompileInputs.cache

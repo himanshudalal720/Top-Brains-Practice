@@ -1,4 +1,0 @@
-D:\Capgemini-Training\CollectionDemoApp\obj\Debug\net10.0\CollectionDemoApp.GeneratedMSBuildEditorConfig.editorconfig
-D:\Capgemini-Training\CollectionDemoApp\obj\Debug\net10.0\CollectionDemoApp.AssemblyInfoInputs.cache
-D:\Capgemini-Training\CollectionDemoApp\obj\Debug\net10.0\CollectionDemoApp.AssemblyInfo.cs
-D:\Capgemini-Training\CollectionDemoApp\obj\Debug\net10.0\CollectionDemoApp.csproj.CoreCompileInputs.cache

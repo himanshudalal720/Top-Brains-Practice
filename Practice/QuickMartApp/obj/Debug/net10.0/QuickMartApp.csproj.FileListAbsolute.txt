@@ -1,4 +1,0 @@
-D:\Capgemini-Training\QuickMartApp\obj\Debug\net10.0\QuickMartApp.GeneratedMSBuildEditorConfig.editorconfig
-D:\Capgemini-Training\QuickMartApp\obj\Debug\net10.0\QuickMartApp.AssemblyInfoInputs.cache
-D:\Capgemini-Training\QuickMartApp\obj\Debug\net10.0\QuickMartApp.AssemblyInfo.cs
-D:\Capgemini-Training\QuickMartApp\obj\Debug\net10.0\QuickMartApp.csproj.CoreCompileInputs.cache
