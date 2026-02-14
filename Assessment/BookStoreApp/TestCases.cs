@@ -1,8 +1,6 @@
 namespace BookStoreApp;
 
-/// <summary>
-/// Test cases for Book Store Application
-/// </summary>
+
 public class TestCases
 {
     public static void RunAllTests()
@@ -14,7 +12,6 @@ public class TestCases
         int passed = 0;
         int failed = 0;
 
-        // Test 1: Basic book creation
         Console.WriteLine("========== TEST 1: Basic Book Creation ==========");
         try
         {
@@ -28,7 +25,6 @@ public class TestCases
             failed++;
         }
 
-        // Test 2: Display book details
         Console.WriteLine("\n========== TEST 2: Display Book Details ==========");
         try
         {
@@ -44,7 +40,6 @@ public class TestCases
             failed++;
         }
 
-        // Test 3: Update price
         Console.WriteLine("\n========== TEST 3: Update Book Price ==========");
         try
         {
@@ -68,7 +63,6 @@ public class TestCases
             failed++;
         }
 
-        // Test 4: Update stock
         Console.WriteLine("\n========== TEST 4: Update Book Stock ==========");
         try
         {
@@ -92,7 +86,6 @@ public class TestCases
             failed++;
         }
 
-        // Test 5: Negative price validation
         Console.WriteLine("\n========== TEST 5: Negative Price Validation ==========");
         try
         {
@@ -106,7 +99,6 @@ public class TestCases
             passed++;
         }
 
-        // Test 6: Negative stock validation
         Console.WriteLine("\n========== TEST 6: Negative Stock Validation ==========");
         try
         {
@@ -120,7 +112,6 @@ public class TestCases
             passed++;
         }
 
-        // Test 7: Update to negative price
         Console.WriteLine("\n========== TEST 7: Update to Negative Price ==========");
         try
         {
@@ -136,13 +127,12 @@ public class TestCases
             passed++;
         }
 
-        // Test 8: Apply discount
         Console.WriteLine("\n========== TEST 8: Apply Discount ==========");
         try
         {
             Book book8 = new Book("BK01", "JavaBook", "Author", 1000, 20);
             BookUtility util8 = new BookUtility(book8);
-            util8.ApplyDiscount(10); // 10% discount
+            util8.ApplyDiscount(10); 
             if (book8.Price == 900)
             {
                 Console.WriteLine("✓ Discount applied correctly");
@@ -160,13 +150,12 @@ public class TestCases
             failed++;
         }
 
-        // Test 9: Invalid discount percentage
         Console.WriteLine("\n========== TEST 9: Invalid Discount Percentage ==========");
         try
         {
             Book book9 = new Book("BK01", "JavaBook", "Author", 1000, 20);
             BookUtility util9 = new BookUtility(book9);
-            util9.ApplyDiscount(150); // Invalid: > 100%
+            util9.ApplyDiscount(150); 
             Console.WriteLine("✗ Should have thrown exception");
             failed++;
         }
@@ -176,7 +165,6 @@ public class TestCases
             passed++;
         }
 
-        // Test 10: Complete workflow (Sample test case)
         Console.WriteLine("\n========== TEST 10: Complete Workflow ==========");
         try
         {
@@ -201,7 +189,6 @@ public class TestCases
             failed++;
         }
 
-        // Summary
         Console.WriteLine("\n╔════════════════════════════════════════════════════════╗");
         Console.WriteLine("║                    TEST SUMMARY                        ║");
         Console.WriteLine("╚════════════════════════════════════════════════════════╝");

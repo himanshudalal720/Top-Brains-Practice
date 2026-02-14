@@ -1,9 +1,6 @@
 namespace BookStoreApp;
 
-/// <summary>
-/// Demo version with interactive menu and additional features
-/// Rename this to Program.cs to use the interactive version
-/// </summary>
+
 class ProgramDemo
 {
     static void MainDemo(string[] args)
@@ -14,7 +11,6 @@ class ProgramDemo
 
         try
         {
-            // Initialize book
             Console.WriteLine("Enter book details (ID Title Price Stock):");
             Console.Write("> ");
             string[] bookData = Console.ReadLine()!.Split(' ');
@@ -29,7 +25,6 @@ class ProgramDemo
 
             Console.WriteLine("\n✓ Book created successfully!\n");
 
-            // Menu loop
             while (true)
             {
                 DisplayMenu();
@@ -79,7 +74,6 @@ class ProgramDemo
                         return;
 
                     case 5:
-                        // Optional: Apply discount
                         Console.Write("Enter discount percentage (0-100): ");
                         if (double.TryParse(Console.ReadLine(), out double discount))
                         {

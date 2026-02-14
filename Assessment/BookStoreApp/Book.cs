@@ -1,8 +1,5 @@
 namespace BookStoreApp;
 
-/// <summary>
-/// Book class with encapsulated properties and validation
-/// </summary>
 public class Book
 {
     private int _price;
@@ -12,9 +9,6 @@ public class Book
     public string Title { get; set; }
     public string Author { get; set; }
 
-    /// <summary>
-    /// Price property with validation to prevent negative values
-    /// </summary>
     public int Price
     {
         get => _price;
@@ -26,9 +20,6 @@ public class Book
         }
     }
 
-    /// <summary>
-    /// Stock property with validation to prevent negative values
-    /// </summary>
     public int Stock
     {
         get => _stock;
@@ -45,7 +36,7 @@ public class Book
         Id = id;
         Title = title;
         Author = author;
-        Price = price; // Uses property setter for validation
-        Stock = stock; // Uses property setter for validation
+        Price = price; 
+        Stock = stock; 
     }
 }
