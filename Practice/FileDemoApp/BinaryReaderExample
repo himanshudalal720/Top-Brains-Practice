@@ -1,0 +1,25 @@
+using System;
+using System.IO;
+using System.Reflection.Metadata;
+class BinaryReaderExample
+{
+    public static void Main(string[] args)
+    {
+        string filePath = "employee.data";
+        using(FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+        using (BinaryReader reader = new BinaryReader(fs))
+        {
+            int id = reader.ReadString();
+            string name = reader.ReadString();
+            double salary = reader.ReadDouble();
+            bool active = reader.ReadBoolean();
+
+            // Console.WriteLine
+            Console.WriteLine($"ID: {id}");
+            Console.WriteLine($"Name : {name}");
+            Console.WriteLine($"Salary : {salary}");
+            Console.WriteLine($"Active : {active }");
+        }
+
+    }
+}
